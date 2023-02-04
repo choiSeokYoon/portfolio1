@@ -1,0 +1,45 @@
+.about_container{
+    display: flex;
+    .about_left{
+        margin-right: 10rem;
+        background: #C7BCA1;
+        box-shadow: 0 0 20px #C7BCA1;
+        
+        position: relative;
+        img{
+            width: 400px;
+            height: 500px;
+            object-fit: cover;
+        }
+    }
+    .about_right{
+        color: #fff;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p{
+            
+            font-size: 2rem;
+            padding-bottom: 11rem;
+        }
+        .introduction{
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            display: flex;
+            flex-wrap: nowrap;
+            
+            .introduction_info{
+                
+                .introduction_key{
+                    
+                    
+                }
+                .introduction_text{
+    
+                }
+            }
+            
+        }
+    }
+}
