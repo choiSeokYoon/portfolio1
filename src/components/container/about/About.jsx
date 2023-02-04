@@ -3,8 +3,8 @@ import './About.scss'
 
 export default function About() {
   return (
-    <div>
-      
+    <div className='container' id='About'>
+      About
     </div>
   )
 }
