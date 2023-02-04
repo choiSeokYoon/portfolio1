@@ -3,11 +3,11 @@ import { motion } from "framer-motion"
 import { navLinks } from '../../Data'
 import { CgMenuGridR } from 'react-icons/cg'
 import { HiX } from 'react-icons/hi'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Navbar() {
   const [toggle , setToggle] = useState(false)
-  const [isOn, setIsOn] = useState(false);
+  const [scroll, setScroll] = useState(false)
 
   const menuVariants = {
     hidden: {
@@ -28,7 +28,7 @@ const navLinkVariants = {
     },
     visible: {
         opacity:1,
-        y: -30,
+        y: -20,
         transition:{
             delay:0.7,
         }
@@ -36,20 +36,17 @@ const navLinkVariants = {
 }
 
 
-  const toggleSwitch = () => setIsOn(!isOn);
 
-
-
-  const spring = {
-    type: "spring",
-    stiffness: 700,
-    damping: 30
-  };
+  useEffect(()=>{
+    window.addEventListener('scroll',()=>{
+      setScroll(window.scrollY > 20)
+    })
+  },[])
 return (
-  <div className='header'>
+  <div className={scroll ? "header active" : "header"}>
     <div className='nav_container'>
       <div className='logo'>
-        <h3>W</h3>
+        <h3>PORTFOLIO</h3>
       </div>
       <ul className='nav_links'>
         {navLinks.map((navLink,idx)=>(
@@ -58,9 +55,7 @@ return (
           </li>
         ))}
       </ul>
-      <div className='switch' onClick={toggleSwitch} data-isOn={isOn}>
-        <motion.div className='handle' layout transition={spring}/>
-      </div>
+      
       <div className='menu'>
         <CgMenuGridR onClick={()=>{
           setToggle(true)
@@ -76,13 +71,11 @@ return (
           variants={navLinkVariants}
           animate={toggle ? "visible" : "hidden"}
         >
-          <HiX onClick={()=>{setToggle(false)}}/>
+          <HiX onClick={()=>setToggle(false)}/>
           {navLinks.map((navLink,idx)=>{
             return (
             <li key={idx}>
-              <a href={`#${navLink}`} onClick={()=>{
-              setToggle(false)
-            }}>{navLink}</a>
+              <a href={`#${navLink}`} onClick={()=>setToggle(false)}>{navLink}</a>
             </li>
         )
         })}

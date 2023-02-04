@@ -1,9 +1,9 @@
-import React from 'react'
+
 import './About.scss'
 
 export default function About() {
   return (
-    <div className='container' id='About'>
+    <div className='container' id='about'>
       About
     </div>
   )

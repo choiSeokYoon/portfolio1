@@ -1,0 +1,25 @@
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .profile_text{
+        padding-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        
+        h3{
+            font-size: 4rem;
+            
+            span{
+                color: #F1D3B3;
+            }
+        }
+        .job{
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+}
