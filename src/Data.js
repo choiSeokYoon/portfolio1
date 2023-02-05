@@ -1,7 +1,7 @@
 import {AiOutlineUser, AiTwotonePhone, AiOutlineMail} from 'react-icons/ai'
 import {FaBirthdayCake, FaHtml5, FaCss3, FaSass, FaReact,FaVuejs,FaNode } from 'react-icons/fa' 
 import {SiJavascript, SiRedux, SiExpress,SiMongodb, SiJquery } from 'react-icons/si' 
-
+import projectImg1 from './assets/project1.png'
 export const frontSkills = [<FaHtml5/>, <FaCss3/>,<FaSass/>,<SiJavascript/>,<SiJquery/>,<FaReact/>,<SiRedux/> ]
 export const backSkills = [<FaNode/>,<SiExpress/>,<SiMongodb/>]
 
@@ -33,5 +33,38 @@ export const introductions = [
         key:"Email",
         text:"ctd0606@naver.com"
     },
+]
+
+export const projects = [
+    {
+        id:1,
+        img: projectImg1,
+        name: "project1",
+        git:"https://github.com/choiSeokYoon/shopProject",
+        site:"https://choiseokyoon.github.io/shopProject/"
+
+
+    },
+    {
+        id:2,
+        img: projectImg1,
+        name: "project1",
+        git:"https://github.com/choiSeokYoon/shopProject",
+        site:"https://choiseokyoon.github.io/shopProject/"
+    },
+    {
+        id:3,
+        img: projectImg1,
+        name: "project1",
+        git:"https://github.com/choiSeokYoon/shopProject",
+        site:"https://choiseokyoon.github.io/shopProject/"
+    },
+    {
+        id:4,
+        img: projectImg1,
+        name: "project1",
+        git:"https://github.com/choiSeokYoon/shopProject",
+        site:"https://choiseokyoon.github.io/shopProject/"
+    }
 ]
 
