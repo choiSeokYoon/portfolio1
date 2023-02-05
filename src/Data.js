@@ -2,7 +2,7 @@ import {AiOutlineUser, AiTwotonePhone, AiOutlineMail} from 'react-icons/ai'
 import {FaBirthdayCake, FaHtml5, FaCss3, FaSass, FaReact,FaVuejs,FaNode } from 'react-icons/fa' 
 import {SiJavascript, SiRedux, SiExpress,SiMongodb, SiJquery } from 'react-icons/si' 
 import projectImg1 from './assets/project1.png'
-export const frontSkills = [<FaHtml5/>, <FaCss3/>,<FaSass/>,<SiJavascript/>,<SiJquery/>,<FaReact/>,<SiRedux/> ]
+export const frontSkills = [<FaHtml5/>, <FaCss3/>,<FaSass/>,<SiJavascript/>,<SiJquery/>,<FaReact/>,<SiRedux/>,<FaVuejs/> ]
 export const backSkills = [<FaNode/>,<SiExpress/>,<SiMongodb/>]
 
 export const navLinks = ["home","about","skills","portfolio","contant"]

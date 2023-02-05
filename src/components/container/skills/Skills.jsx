@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 import './Skills.scss'
 import { frontSkills, backSkills } from '../../../Data'
 
@@ -6,10 +7,16 @@ export default function Skills() {
   const [active, setActive] = useState(1)
   return (
     <div className='container' id='skills'>
-      <div className='title'>
-        <h1>Skills</h1>
-      </div>
-      <div className='select'>
+      <motion.div 
+      initial={{opacity:0}} 
+      whileInView={{y:[50,0], opacity:1}} 
+      className='title'>
+        <h1>Skill</h1>
+      </motion.div>
+      <motion.div 
+        initial={{opacity:0}}
+        whileInView={{y: [50, 0], opacity: 1}}
+        className='select'>
         <button 
           onClick={()=>{setActive(1)}}
           className={active === 1 ? "active" : "" }
@@ -18,17 +25,25 @@ export default function Skills() {
           onClick={()=>{setActive(2)}}
           className={active === 2 ? "active" : "" }
         >back</button>
-      </div>
-      <div className='skills'>
+      </motion.div>
+      <motion.div 
+        initial={{opacity:0}}
+        whileInView={{y: [50, 0], opacity: 1}}
+        transition={{duration:1}}
+        className='skills'>
         {active === 1 && frontSkills.map((front, idx)=>(
           <div className='skill_icon' key={idx}>{front}</div>
         ))}
-      </div>
-      <div className='skills'>
+      </motion.div>
+      <motion.div 
+        initial={{opacity:0}}
+        whileInView={{y: [50, 0], opacity: 1}}
+        transition={{duration:1}}
+        className='skills'>
         {active === 2 && backSkills.map((back, idx)=>(
           <div className='skill_icon' key={idx}>{back}</div>
         ))}
-      </div>
+      </motion.div>
     </div>
   )
 }

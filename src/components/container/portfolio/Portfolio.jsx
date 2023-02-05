@@ -7,9 +7,12 @@ export default function Portfolio() {
   
   return (
     <div className='container' id='portfolio'>
-      <div className='title'>
+      <motion.div 
+      initial={{opacity:0}} 
+      whileInView={{y:[-50,0], opacity:1}} 
+      className='title'>
         <h1>Project</h1>
-      </div>
+      </motion.div>
       <div className='projectImgs'>
         {projects.map((project)=>(
           <div className='projectImg' key={project.id}>
