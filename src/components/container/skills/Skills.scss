@@ -1,0 +1,44 @@
+.select{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 7rem;
+    button{
+        color: #000;
+        background: #fff;
+        padding: 1rem 3rem;
+        border: none;
+        margin-top: 1rem;
+        cursor: pointer;
+        font-size: 1.4rem;
+        border-radius: 10px;
+        text-transform: uppercase;
+        font-weight: 600;
+        &.active{
+            background: #8B7E74;
+            color: #fff;
+        }
+    }
+}
+.skills{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    row-gap: 4rem;
+    @media screen and (max-width:800px) {
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.6rem;
+    }
+    .skill_icon{
+        display: flex;
+        justify-content: center;
+        svg{
+            width: 110px;
+            height: 110px;
+            color: #fff;
+            
+        }
+    }
+}

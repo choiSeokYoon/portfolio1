@@ -23,7 +23,7 @@ export default function About() {
             <div className='introduction'>
             {introductions.map(introduction =>(
               <div className='introduction_info' key={introduction.id}>
-                <span className='introduction_key'>{introduction.icon}{introduction.key}</span>
+                <span className='introduction_key'>{introduction.icon} {introduction.key}</span>
                 <span className='introduction_text'>{introduction.text}</span>
               </div>
               ))}

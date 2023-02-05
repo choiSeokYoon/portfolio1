@@ -1,7 +1,9 @@
 import {AiOutlineUser, AiTwotonePhone, AiOutlineMail} from 'react-icons/ai'
-import {FaBirthdayCake } from 'react-icons/fa' 
+import {FaBirthdayCake, FaHtml5, FaCss3, FaSass, FaReact,FaVuejs,FaNode } from 'react-icons/fa' 
+import {SiJavascript, SiRedux, SiExpress,SiMongodb, SiJquery } from 'react-icons/si' 
 
-
+export const frontSkills = [<FaHtml5/>, <FaCss3/>,<FaSass/>,<SiJavascript/>,<SiJquery/>,<FaReact/>,<SiRedux/> ]
+export const backSkills = [<FaNode/>,<SiExpress/>,<SiMongodb/>]
 
 export const navLinks = ["home","about","skills","portfolio","contant"]
 
@@ -17,7 +19,7 @@ export const introductions = [
         id:2,
         icon:<FaBirthdayCake/>,
         key:"Birth",
-        text:"1995.03.16"
+        text:"1995.06.06"
     },
     {
         id:3,
@@ -32,3 +34,4 @@ export const introductions = [
         text:"ctd0606@naver.com"
     },
 ]
+
