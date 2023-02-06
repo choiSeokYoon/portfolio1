@@ -10,7 +10,7 @@ html{
 }
 body {
   background: #65647C;
-  font-family: 'Merriweather', serif;
+  font-family: 'Unbounded', cursive;
   font-weight: 500;
   
 }
@@ -34,5 +34,6 @@ a{
   text-align: center;
   margin: 3rem;
   font-size: 2.6rem;
+  color: #fff;
 }
 

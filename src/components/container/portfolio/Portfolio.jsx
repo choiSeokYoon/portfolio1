@@ -14,6 +14,8 @@ export default function Portfolio() {
         <h1>Project</h1>
       </motion.div>
       <div className='projectImgs'>
+        <div className='square1'></div>
+        <div className='square2'></div>
         {projects.map((project)=>(
           <div className='projectImg' key={project.id}>
             <img src={project.img} alt="프로젝트 이미지" />

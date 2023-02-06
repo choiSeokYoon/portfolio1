@@ -1,15 +1,19 @@
+
 .about_container{
     display: flex;
     justify-content: space-between;
+    position: relative;
+    margin-top: 7rem;
     @media screen and (max-width:800px) {
         flex-direction: column;
     }
+    
     .about_left{
         margin-right: 8rem;
-        background: #C7BCA1;
-        box-shadow: 0 0 20px #C7BCA1;
+        /* background: #46C2CB;
+        box-shadow: 0 0 20px #46C2CB; */
         
-        position: relative;
+        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -25,8 +29,9 @@
     }
     .about_right{
         color: #fff;
-        padding: 2rem;
+        
         display: flex;
+        gap: 1rem;
         flex-direction: column;
         justify-content: center;
         justify-content: space-between;
@@ -38,13 +43,13 @@
         }
         .introduction{
             font-size: 1.3rem;
-            margin-bottom: 1rem;
+            
             display: flex;
             flex-direction: column;
             
             .introduction_info{
                 flex-basis: 50%;
-                padding-bottom: 3rem;
+               
                 display: flex;
                 
                 align-items: center;
@@ -61,4 +66,22 @@
             
         }
     }
+}
+.square1{
+    position: absolute;
+    top: -90px;
+    left: 0;
+    width: 570px;
+    height: 50px;
+    background: #e65238;
+    z-index: -1;
+} 
+.square2{
+    position: absolute;
+    top: -150px;
+    right: 650px;
+    width: 200px;
+    height: 90px;
+    background: #13005A;
+    z-index: -1;
 }

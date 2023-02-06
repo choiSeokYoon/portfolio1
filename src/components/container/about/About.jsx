@@ -6,13 +6,16 @@ import './About.scss'
 export default function About() {
   return (
     <div className='container' id='about'>
-      <motion.div 
+      
+      <motion.div
         initial={{opacity:0}}
         whileInView={{y:[50, 0], opacity:1}}
         className='title'>
         <h1>About Me</h1>
       </motion.div>
       <div className='about_container'>
+        <div className='square1'></div>
+        <div className='square2'></div>
         <motion.div 
           initial={{opacity: 0}}
           whileInView={{x:[-250, 0], opacity:1}}

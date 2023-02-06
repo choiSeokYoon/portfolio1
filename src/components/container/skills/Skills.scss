@@ -1,44 +1,75 @@
-.select{
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    margin-bottom: 7rem;
-    button{
-        color: #000;
-        background: #fff;
-        padding: 1rem 3rem;
-        border: none;
-        margin-top: 1rem;
-        cursor: pointer;
-        font-size: 1.4rem;
-        border-radius: 10px;
-        text-transform: uppercase;
-        font-weight: 600;
-        &.active{
-            background: #8B7E74;
-            color: #fff;
-        }
-    }
-}
-.skills{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    row-gap: 4rem;
-    @media screen and (max-width:800px) {
-        grid-template-columns: repeat(2,1fr);
-        gap: 1.6rem;
-    }
-    .skill_icon{
+.skill_container{
+    position: relative;
+    margin-top: 5rem;
+    .select{
         display: flex;
         justify-content: center;
-        svg{
-            width: 110px;
-            height: 110px;
-            color: #fff;
-            
+        gap: 5rem;
+        margin-bottom: 7rem;
+        
+        button{
+            color: #000;
+            background: #fff;
+            padding: 1rem 3rem;
+            border: none;
+            margin-top: 1rem;
+            cursor: pointer;
+            font-size: 1.4rem;
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-weight: 600;
+            &.active{
+                background: #8B7E74;
+                color: #fff;
+            }
         }
     }
+    .skills{
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        row-gap: 4rem;
+        @media screen and (max-width:800px) {
+            grid-template-columns: repeat(2,1fr);
+            gap: 1.6rem;
+        }
+        .skill_icon{
+            display: flex;
+            justify-content: center;
+            svg{
+                width: 60px;
+                height: 60px;
+                color: #fff;
+                
+            }
+        }
+    }
+    .square3{
+        position: absolute;
+        top: -70px;
+        right: 0;
+        width: 570px;
+        height: 50px;
+        background: #e65238;
+        z-index: -1;
+    } 
+    .square4{
+        position: absolute;
+        top: -130px;
+        left: 650px;
+        width: 200px;
+        height: 90px;
+        background: #13005A;
+        z-index: -1;
+    }
+   
+    
 }
+
+
+
+
+
